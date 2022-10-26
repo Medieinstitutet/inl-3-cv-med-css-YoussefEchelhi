@@ -1,1 +1,32 @@
 /*# sourceMappingURL=style.css.map */
+body {
+    margin: 0;
+    padding: 0;
+}
+.fullpage {
+    background-color: lightblue;
+    min-height: 100vh;
+} 
+
+.menu {
+    background-color: black;
+    position: fixed ;
+    min-width: 100vw;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    min-width: 100vw;
+}
+
+.fullpage2 {
+    background-color: red;
+    min-height: 100vh;
+}
+
+.fullpage3 {
+    background-color: lightblue;
+    min-height: 100vh;
+}
