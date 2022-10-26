@@ -325,16 +325,24 @@ body {
   position: fixed;
   min-width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-h1 {
+.ye {
   color: white;
+}
+
+.home {
+  display: none;
+}
+
+.resume {
+  display: none;
 }
 
 .container {
   position: absolute;
-  margin-top: 50%;
+  margin-top: 8rem;
   min-width: 100vw;
   outline: 1px solid;
   display: flex;
@@ -364,14 +372,22 @@ footer {
   min-height: 100vh;
 }
 
+.container2 {
+  outline: 1px solid;
+  min-height: 50vh;
+}
+
 .jobs {
+  margin: 0px;
+}
+
+.container3 {
   outline: 1px solid;
   min-height: 50vh;
 }
 
 .education {
-  outline: 1px solid;
-  min-height: 50vh;
+  margin: 0px;
 }
 
 .fullpage3 {
@@ -379,7 +395,27 @@ footer {
   min-height: 100vh;
 }
 
-.skills {
+.container4 {
   outline: 1px solid;
   min-height: 50vh;
+}
+
+.skills {
+  margin: 0px;
+}
+
+.contact {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+  .home {
+    display: inline;
+  }
+  .resume {
+    display: inline;
+  }
 }/*# sourceMappingURL=style.css.map */
