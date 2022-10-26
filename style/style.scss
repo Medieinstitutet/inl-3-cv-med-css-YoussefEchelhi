@@ -1,1 +1,77 @@
 @import 'normalize';
+
+/*# sourceMappingURL=style.css.map */
+body {
+    margin: 0;
+    padding: 0;
+}
+.fullpage {
+    background-color: lightblue;
+    min-height: 100vh;
+    position: relative;
+} 
+
+.menu {
+    outline: 1px solid;
+    position: fixed;
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: white;
+}
+
+.container {
+    position: absolute;
+    margin-top: 50%;
+    min-width: 100vw;
+    outline: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.face {
+    border-radius: 50%;
+
+}
+
+.profile {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    min-width: 100vw;
+}
+
+.fullpage2 {
+    background-color: red;
+    min-height: 100vh;
+}
+
+.jobs {
+    outline: 1px solid;
+    min-height: 50vh;
+}
+
+.education {
+    outline: 1px solid;
+    min-height: 50vh;
+}
+
+.fullpage3 {
+    background-color: lightblue;
+    min-height: 100vh;
+}
+
+.skills {
+    outline: 1px solid;
+    min-height: 50vh;
+}
