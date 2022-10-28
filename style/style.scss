@@ -4,6 +4,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .fullpage {
     min-height: 100vh;
@@ -23,6 +24,7 @@ header {
 
 .ye {
     color: white;
+    font-weight: bold;
 }
 
 .button-menu {
@@ -31,7 +33,7 @@ header {
     background: transparent;
     border: 0;
     position: fixed;
-    top: 2.4rem;
+    top: 2.3rem;
     right: 1rem;
     z-index: 2;
     pointer-events: none;
@@ -39,7 +41,7 @@ header {
 
 input {
     position: fixed;
-    top: 2.4rem;
+    top: 2.3rem;
     right: 1rem;
     width: 35px;
     height: 35px;
@@ -90,6 +92,7 @@ input:checked + .menu nav {
 }
 
 ul {
+    font-weight: bold;
     color: white;
     text-transform: uppercase;
     margin: 0;
@@ -115,7 +118,7 @@ ul {
     position: absolute;
     margin-top: 15rem;
     min-width: 80vw;
-    left: 35px;
+    left: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,10 +148,14 @@ figcaption {
 footer {
     position: fixed;
     bottom: 0;
-    background-color: #2c3e50;
     min-width: 100vw;
-    margin-bottom: 1rem;
     z-index: 2;
+    text-align: center;
+    background: white;
+}
+
+.fa-brands {
+    font-size: 3rem;
 }
 
 .fullpage2 {
