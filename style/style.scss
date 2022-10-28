@@ -78,9 +78,9 @@ input:checked + .menu .button-menu span:nth-child(3) {
 nav {
     position: fixed;
     background: #2c3e50;
-    height: 8vh;
+    height: 20vh;
     width: 100vw;
-    margin-top: 5rem;
+    margin-top: 4.2rem;
     left: 0;
     left: -100%;
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -91,7 +91,7 @@ input:checked + .menu nav {
     z-index: 3;
 }
 
-ul {
+.menu-direction {
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -99,10 +99,16 @@ ul {
     padding: 0;
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.menu-direction > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
 
 .home {
@@ -114,7 +120,7 @@ ul {
 }
 
 .container {
-    background-color: white;
+    background-color: rgb(242, 242, 250);
     position: absolute;
     margin-top: 15rem;
     min-width: 80vw;
@@ -137,8 +143,21 @@ figcaption {
     font-size: 1.8rem;
 }
 
+.place {
+    margin: 0px;
+    text-align: center;
+}
+
 .profile {
     text-align: center;
+}
+
+.profile > h3 {
+    display:none;
+}
+
+.profile > p {
+    font-size: 1.2rem ;
 }
 
 .info {
@@ -156,6 +175,7 @@ footer {
 
 .fa-brands {
     font-size: 3rem;
+    text-decoration: none;
 }
 
 .fullpage2 {
@@ -165,41 +185,42 @@ footer {
 
 .container2 {
     min-height: 35vh;
-    margin-top: 6rem;
-    background-color: white;
+    margin-top: 15rem;
+    background-color: rgb(242, 242, 250);
     position: absolute;
     min-width: 80vw;
     left: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: space-evenly;
     box-shadow: 20px 20px 20px;
 }
 
 .jobs {
     margin: 0px;
+    position: relative;
+    text-align: center;
+}
+
+.container2 > p {
+    font-size: 1.3rem;
 }
 
 .container3 {
     min-height: 35vh;
-    background-color: white;
+    background-color: rgb(242, 242, 250);
     position: absolute;
     min-width: 80vw;
-    margin-top: 50vh;
+    margin-top: 15rem;
     left: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: space-evenly;
     box-shadow: 20px 20px 20px;
-    
 }
 
 .education {
     margin: 0px;
+    position: relative;
+    text-align: center;
+}
+
+.container3 > p {
+    font-size: 1.3rem;
 }
 
 .fullpage3 {
@@ -207,23 +228,29 @@ footer {
     min-height: 100vh;
 }
 
-.container4 {
-    min-height: 50vh;
-    margin-top: 8rem;
+.fullpage4 {
     background-color: white;
+    min-height: 100vh;
+}
+
+.container4 {
+    min-height: 35vh;
+    margin-top: 15rem;
+    background-color: rgb(242, 242, 250);
     position: absolute;
     min-width: 80vw;
     left: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: space-evenly;
     box-shadow: 20px 20px 20px;
 }
 
 .skills {
     margin: 0px;
+    position: relative;
+    text-align: center;
+}
+
+.container4 > p {
+    font-size: 1.3rem;
 }
 
 .contact {
