@@ -317,7 +317,9 @@ body {
 
 .fullpage {
   min-height: 100vh;
+  min-width: 100vw;
   position: relative;
+  background-color: red;
 }
 
 header {
@@ -431,8 +433,10 @@ input:checked + .menu nav {
 .container {
   background-color: rgb(242, 242, 250);
   position: absolute;
-  margin-top: 15rem;
-  min-width: 80vw;
+  margin-top: 17rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   left: 10%;
   display: flex;
   align-items: center;
@@ -454,6 +458,7 @@ figcaption {
 .place {
   margin: 0px;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .profile {
@@ -473,8 +478,8 @@ figcaption {
 }
 
 footer {
-  position: fixed;
   bottom: 0;
+  position: relative;
   min-width: 100vw;
   z-index: 2;
   text-align: center;
@@ -487,16 +492,19 @@ footer {
 }
 
 .fullpage2 {
-  background-color: white;
+  background-color: green;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
 .container2 {
   min-height: 35vh;
-  margin-top: 15rem;
+  margin-top: 17rem;
   background-color: rgb(242, 242, 250);
   position: absolute;
-  min-width: 80vw;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   left: 35px;
   box-shadow: 20px 20px 20px;
 }
@@ -515,8 +523,10 @@ footer {
   min-height: 35vh;
   background-color: rgb(242, 242, 250);
   position: absolute;
-  min-width: 80vw;
-  margin-top: 15rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  margin-top: 17rem;
   left: 35px;
   box-shadow: 20px 20px 20px;
 }
@@ -532,18 +542,20 @@ footer {
 }
 
 .fullpage3 {
-  background-color: white;
+  background-color: red;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
 .fullpage4 {
-  background-color: white;
+  background-color: green;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
 .container4 {
   min-height: 35vh;
-  margin-top: 15rem;
+  margin-top: 17rem;
   background-color: rgb(242, 242, 250);
   position: absolute;
   min-width: 80vw;
@@ -561,26 +573,70 @@ footer {
   font-size: 1.3rem;
 }
 
-.contact {
-  color: white;
+.container-tablet {
+  display: none;
 }
 
-@media screen and (min-width: 768px) {
+.container2-tablet {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    position: relative;
+  }
   .button-menu {
     display: none;
   }
   .home {
     display: inline;
+    color: white;
   }
   .resume {
     display: inline;
+    color: white;
+  }
+  .fa-solid {
+    font-size: 2rem;
+  }
+  .fa-brands {
+    font-size: 2rem;
+  }
+  ul {
+    list-style: none;
+  }
+  .contact {
+    font-weight: bold;
+    font-size: 1.5rem;
   }
   .container {
+    position: absolute;
     flex-direction: row;
-    top: 6rem;
+    margin-top: 10px;
+    display: flex;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
   .info {
-    display: inline;
+    display: block;
+  }
+  .container2-tablet {
+    display: none;
+    width: 20rem;
+    top: 1rem;
+    background-color: rgb(242, 242, 250);
+    box-shadow: 20px 20px 20px;
+    position: relative;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    float: right;
+    right: 20%;
+    font-size: large;
   }
   footer {
     display: none;
